@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ListView
+            android:id="@+id/wifiList"
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:layout_weight="0.97"/>
+
+    <Button
+            android:id="@+id/scanBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="15dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Scan WiFi"/>
+</LinearLayout>
