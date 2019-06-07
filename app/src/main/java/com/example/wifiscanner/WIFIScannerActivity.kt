@@ -85,14 +85,15 @@ class WIFIScannerActivity : AppCompatActivity() {
                 }
                 Log.d("WIFIScannerActivity", "WIFI SSID 9: $wifi_ssid_first_nine_characters")
 
-                if (wifi_ssid_first_nine_characters == "WIFI_NAME") {
+                // Display only WIFI that matched "WIFI_NAME"
+//                if (wifi_ssid_first_nine_characters == "WIFI_NAME") {
                     Log.d(
                         "WIFIScannerActivity",
                         "scanResult.SSID: " + scanResult.SSID + ", scanResult.capabilities: " + scanResult.capabilities
                     )
                     arrayList.add(scanResult.SSID + " - " + scanResult.capabilities)
                     adapter!!.notifyDataSetChanged()
-                }
+//                }
 
                 wifi_ssid = ""
                 wifi_ssid_first_nine_characters = ""
